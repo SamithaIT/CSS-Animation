@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+}
+.rain{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: rain 0.1s linear infinite;
+    opacity: 0;
+    z-index: 3;
+}
+.main-outer{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.horizon-outer{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background-color: rgba(44, 62, 80,0.8);
+    overflow: hidden;
+}
+/* ==============mount */
+.mount-1{
+    height: 48vh;
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    z-index: 2;
+}
+.mount-2{
+    height: 48vh;
+    position: absolute;
+    bottom: 0;
+    left: 350px;
+    z-index: 1;
+}
+.mount-3{
+    height: 48vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* ==============mount */
+
+.road-outer{
+    width: 100%;
+    height: 40vh;
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.line{
+    border-top: 5px dashed white;
+    width: 100%;
+}
+.walk-outer{
+    height: 10vh;
+    background-color: #7f8c8d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tree{
+    height: 150px;
+    position: relative;
+    margin-top: -80px;
+    z-index: 2;
+}
+.butterfly{
+    width: 100px;
+    animation: fly-butterfly 15s infinite linear;
+    position: absolute;
+    margin-top: -80px;
+    z-index: 3;
+}
+.monkey{
+    width: 150px;
+    height: 150px;
+    animation: run 10s infinite linear;
+    position: absolute;
+    margin-top: -75px;
+    margin-bottom: 0;
+    z-index: 4;
+}
+.car-box{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+}
+.car-box1{
+    bottom: -2vh;
+    /* animation: drive 0.5 infinite linear; */
+    animation-name: drive-car1-3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+.car-box2{
+    top: -7vh;
+    /* animation: drive 0.5 infinite linear; */
+    animation-name: drive-car2-4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.car-box3{
+    bottom: 1vh;
+    /* animation: drive 0.5 infinite linear; */
+    animation-name: drive-car1-3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.car-box4{
+    top: 4vh;
+    /* animation: drive 0.5 infinite linear; */
+    animation-name: drive-car2-4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.car1{
+    height: 100%;
+}
+.car2{
+    width: 300px;
+    height: 220px;
+}
+.car3{
+    width: 250px;
+    height: 100px;
+}
+.car4{
+    width: 250px;
+    height: 160px;
+}
+
+.wheel-car1{
+    height: 45px;
+    width: 45px;
+    animation-name: wheel-rotate-car1-3;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.wheel-car2{
+    height: 43px;
+    width: 43px;
+    animation-name: wheel-rotate-car2-4;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.wheel-car3{
+    height: 45px;
+    width: 45px;
+    animation-name: wheel-rotate-car1-3;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.wheel-car4{
+    height: 40px;
+    width: 40px;
+    animation-name: wheel-rotate-car2-4;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.wheel-1{
+    position: absolute;
+    bottom: 30px;
+    left: 36px;
+}
+.wheel-2{
+    position: absolute;
+    bottom: 30px;
+    right: 76px;
+}
+.wheel-3{
+    position: absolute;
+    bottom: 4px;
+    left: 52px;
+}
+.wheel-4{
+    position: absolute;
+    bottom: 4px;
+    right: 52px;
+}
+.wheel-5{
+    position: absolute;
+    bottom: 52px;
+    left: 22px;
+}
+.wheel-6{
+    position: absolute;
+    bottom: 52px;
+    right: 87px;
+}
+.wheel-7{
+    position: absolute;
+    bottom: 42px;
+    left: 41px;
+}
+.wheel-8{
+    position: absolute;
+    bottom: 42px;
+    right: 89px;
+}
+
+/* =============== */
+.cloud{
+    width: 200px;
+    position: absolute;
+    right: 0;
+}
+.cloud-1{
+    animation: move 20s infinite linear;
+    z-index: 1;
+    top: -7vh;
+}
+.cloud-2{
+    animation: move 30s infinite linear;
+}
+/* ================= */
+
+.bird{
+    width: 100px;
+    animation: fly 15s infinite linear;
+    position: absolute;
+    z-index: 3;
+}
+.birds{
+    width: 250px;
+    animation: flys 10s infinite linear;
+    position: absolute;
+    z-index: 3;
+}
+.star{
+    width: 20px;
+    position: absolute;
+
+}
+.star-1{
+    top: 50px;
+    left: 20px;
+    animation: blink 5s infinite linear;
+}
+.star-2{
+    top: 80px;
+    left: 250px;
+    animation: blink 3s infinite linear;
+}
+.star-3{
+    top: 40px;
+    right: 500px;
+    animation: blink 8s infinite linear;
+}
+.star-4{
+    top: 110px;
+    right: 270px;
+    animation: blink 2s infinite linear;
+}
+.star-5{
+    top: 70px;
+    right: 20px;
+    animation: blink 6s infinite linear;
+}
+.moon{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    left: 470px;
+    top: 60px;
+}
+.thunder-1{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    left: 20px;
+    top: -30px;
+    animation: thunder 5s infinite linear;
+}
+.thunder-2{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    left: 600px;
+    top: -30px;
+    z-index: 5;
+}
+.thunder-3{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    right: 100px;
+    top: -30px;
+    z-index: 5;
+}
+
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes wheel-rotate-car1-3{
+    form{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes wheel-rotate-car2-4{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move{
+    from{
+        right: -200px;
+    }
+    to{
+        right: 1600px;
+    }
+}
+
+@keyframes fly{
+    0%{
+        left: -100px;
+    }
+    50%{
+        left: 900px;
+        transform: translateY(200px);
+    }
+    100%{
+        left: 1600px;
+    }
+}
+
+@keyframes flys{
+    0%{
+        left: -100px;
+    }
+    100%{
+        left: 1600px;
+        transform: translateY(100px);
+    }
+}
+
+@keyframes fly-butterfly{
+    0%{
+        right: 0px;
+    }
+    50%{
+        right: 900px;
+        transform: translateY(30px);
+    }
+    100%{
+        right: 1550px;
+    }
+}
+
+@keyframes run{
+    from{
+        left: -100px;
+    }
+    to{
+        left: 1380px;
+    }
+}
+
+
+@keyframes drive-car1-3{
+    from{
+        right: -300px;
+    }
+    to{
+        right: 1500px;
+    }
+}
+
+@keyframes drive-car2-4{
+    from{
+        left: -300px;
+    }
+    to{
+        left: 1500px;
+    }
+}
+
+@keyframes rain {
+    0% {
+        background-position: 0 0;
+        opacity: 1;
+    }
+
+    100% {
+        background-position: 8% 80%;
+        opacity: 1;
+    }
+}
+
+@keyframes thunder{
+    0%{
+        visibility: hidden;
+        
+    }
+    100%{
+        visibility: visible;
+    }
+}
